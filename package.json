@@ -1,5 +1,5 @@
 {
-  "name": "x-guard-mcp",
+  "name": "safe-twitter-mcp",
   "version": "1.0.0",
   "description": "MCP server for the X (Twitter) API with cost guardrails, approve-before-post safety and a local spend log.",
   "keywords": [
@@ -14,11 +14,11 @@
   "author": "Saadat Baig",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saadatdev/x-guard-mcp.git"
+    "url": "git+https://github.com/saadatdev/safe-twitter-mcp.git"
   },
-  "homepage": "https://github.com/saadatdev/x-guard-mcp#readme",
+  "homepage": "https://github.com/saadatdev/safe-twitter-mcp#readme",
   "bugs": {
-    "url": "https://github.com/saadatdev/x-guard-mcp/issues"
+    "url": "https://github.com/saadatdev/safe-twitter-mcp/issues"
   },
   "private": true,
   "type": "module",

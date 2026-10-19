@@ -113,7 +113,7 @@ export function readUsage(): UsageEntry[] {
     try {
       out.push(JSON.parse(line) as UsageEntry);
     } catch {
-      console.error('[x-guard] skipping malformed usage.jsonl line');
+      console.error('[safe-twitter] skipping malformed usage.jsonl line');
     }
   }
   return out;

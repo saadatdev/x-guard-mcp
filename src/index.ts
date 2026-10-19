@@ -19,7 +19,7 @@ async function main(): Promise<void> {
   loadEnv();
   loadConfig();
 
-  const server = new McpServer({ name: 'x-guard', version: '1.0.0' });
+  const server = new McpServer({ name: 'safe-twitter', version: '1.0.0' });
 
   registerSearchPosts(server);
   registerGetAccountPosts(server);
@@ -33,10 +33,10 @@ async function main(): Promise<void> {
   registerGetUsageSummary(server);
 
   await server.connect(new StdioServerTransport());
-  console.error('[x-guard] ready');
+  console.error('[safe-twitter] ready');
 }
 
 main().catch((err) => {
-  console.error(`[x-guard] failed to start: ${(err as Error).message}`);
+  console.error(`[safe-twitter] failed to start: ${(err as Error).message}`);
   process.exit(1);
 });

@@ -1,12 +1,12 @@
-# x-guard-mcp
+# safe-twitter-mcp
 
-A personal X (Twitter) MCP server with cost guardrails, approve-before-post safety, and a local spend log.
+An X (Twitter) MCP server with cost guardrails, approve-before-post safety, and a local spend log.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D22.12-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![MCP](https://img.shields.io/badge/MCP-stdio-6E56CF)](https://modelcontextprotocol.io)
-[![CI](https://github.com/saadatdev/x-guard-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/saadatdev/x-guard-mcp/actions/workflows/ci.yml)
+[![CI](https://github.com/saadatdev/safe-twitter-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/saadatdev/safe-twitter-mcp/actions/workflows/ci.yml)
 
 ## Why
 
@@ -98,8 +98,8 @@ scripts/smoke.ts    manual end-to-end check against the live API
 ### Install and build
 
 ```bash
-git clone https://github.com/saadatdev/x-guard-mcp.git
-cd x-guard-mcp
+git clone https://github.com/saadatdev/safe-twitter-mcp.git
+cd safe-twitter-mcp
 npm install
 cp .env.example .env                  # then fill in the four X keys
 cp config.example.json config.json    # then set your timezone, topics and watch list
@@ -130,9 +130,9 @@ escaped backslashes:
 ```json
 {
   "mcpServers": {
-    "x-guard": {
+    "safe-twitter": {
       "command": "node",
-      "args": ["C:\\path\\to\\x-guard-mcp\\dist\\index.js"]
+      "args": ["C:\\path\\to\\safe-twitter-mcp\\dist\\index.js"]
     }
   }
 }
@@ -143,9 +143,9 @@ On macOS:
 ```json
 {
   "mcpServers": {
-    "x-guard": {
+    "safe-twitter": {
       "command": "node",
-      "args": ["/Users/you/path/to/x-guard-mcp/dist/index.js"]
+      "args": ["/Users/you/path/to/safe-twitter-mcp/dist/index.js"]
     }
   }
 }
@@ -157,7 +157,7 @@ Credentials are read from the `.env` file next to the server, so they never go i
 ### Connect to Claude Code
 
 ```bash
-claude mcp add --scope user x-guard -- node /absolute/path/to/x-guard-mcp/dist/index.js
+claude mcp add --scope user safe-twitter -- node /absolute/path/to/safe-twitter-mcp/dist/index.js
 ```
 
 ## X developer setup
