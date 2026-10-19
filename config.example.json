@@ -1,0 +1,36 @@
+{
+  "timezone": "UTC",
+
+  "topics": [
+    "MCP server",
+    "AI agents",
+    "LLM",
+    "TypeScript",
+    "open source"
+  ],
+
+  "watch_accounts": [
+    "OpenAI",
+    "GoogleDeepMind",
+    "huggingface",
+    "github",
+    "nodejs"
+  ],
+
+  "reading": {
+    "default_max_results": 10,
+    "max_results_cap": 50,
+    "default_query_suffix": "-is:retweet lang:en"
+  },
+
+  "posting": {
+    "max_chars": 280,
+    "warn_on_links": true
+  },
+
+  "budget": {
+    "daily_post_reads": 300,
+    "daily_post_creates": 8,
+    "daily_spend_usd": 2.0
+  }
+}
